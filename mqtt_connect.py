@@ -74,9 +74,6 @@ client.on_disconnect = on_disconnect
 try:
     # Connect to the MQTT broker
     client.connect(broker, port, keepalive=60)
-    
-    # Publish a message to the topic
-    client.publish(topic, "Hello MQTT!")
 
     # Start the network loop
     client.loop_start()
